@@ -12,4 +12,4 @@ För att komma igång rekommenderas editorn VS Code och följande tillägg
 - Prettier: det är en kodformaterare som gör att formateringen av koden blir
   enhelig och följer standard.
 
-  En smidig detalj att konfigurera är också `AutoSave`, som ställs till onFocusChange`.
+  En smidig detalj att konfigurera är också `AutoSave`, som ställs till `onFocusChange`.
