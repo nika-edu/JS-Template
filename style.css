@@ -38,19 +38,49 @@ body {
 }
 
 #output-container {
-  /*Rutan som utmatningen sker i*/
+  display: flex; /* Flex ger ett rutmönster */
+  flex-direction: row;
+  justify-content: center; /* Centrering på raden, dvs horisontellt */
+  align-items: center;
+  width: 80%;
+}
+
+#text-output-container {
+  /*Rutan som textutmatningen sker i*/
+  display: flex; /* Flex ger ett rutmönster */
+  flex-direction: row;
   font-family: serif;
   font-size: 18px;
   color: yellow;
   margin: 1%;
-  width: 100%;
+  width: 30%;
   height: 50vh;
-  max-width: 70%; /* Bli inte hur bred som helst */
   padding: 2%;
-  text-align: left; /* Justera mot horisontell mitt */
+  text-align: left;
   border: dashed;
   border-color: black;
   border-width: 1.5px;
   border-radius: 15px; /* Rundade hörn */
-  display: none;
+  /*display: none;*/
+}
+
+#image-output-container {
+  /*Rutan som bildutmatningen sker i*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centering i kolumnen, dvs vertikalt */
+  text-align: center; /* Horisontell centrering av text */
+  background-color: lightblue; /* Man sätta bakgrundsfärg som är skild från sidans bakgrund */
+  font-family: serif;
+  font-size: 48px;
+  color: black;
+  margin: 1%;
+  width: 70%;
+  height: 50vh;
+  padding: 2%;
+  border: dashed;
+  border-color: black;
+  border-width: 1.5px;
+  border-radius: 15px; /* Rundade hörn */
+  /*display: none;*/
 }

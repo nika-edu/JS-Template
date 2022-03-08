@@ -5,8 +5,8 @@
 // eller raderas.
 
 // Taggarna output-text och output-container återfinns i HTML-filen
+let outputContainer = document.getElementById("text-output-container");
 let outputText = document.getElementById("output-text");
-let outputContainer = document.getElementById("output-container");
 
 // Man kan t ex ställa färgen på ett område
 outputContainer.style.backgroundColor = "None";
