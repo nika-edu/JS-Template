@@ -9,12 +9,12 @@ body {
   /* Överordnad container som innehåller de mindre */
   display: flex; /* Flex ger ett rutmönster */
   flex-direction: column;
+  align-items: center; /* Justera mot horisontell mitt */
   width: 100%;
   padding: 3%; /* Marginal mot webbläsarfönstret */
   margin-top: 10px;
   margin-bottom: 10px;
   background-color: transparent;
-  align-items: center; /* Justera mot horisontell mitt */
   /* border: solid; */
 }
 
@@ -34,7 +34,7 @@ body {
   background-color: transparent;
   /* border: solid; */
   /* border-width: 1.5px; */
-  /* border-color: black; */
+  /* bordr-color: black; */
 }
 
 #output-container {
@@ -82,5 +82,5 @@ body {
   border-color: black;
   border-width: 1.5px;
   border-radius: 15px; /* Rundade hörn */
-  /*display: none;*/
+  display: none;
 }

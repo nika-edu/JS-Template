@@ -1,12 +1,10 @@
 // Denna JS-fil visar hur utdata från JS kan dirigeras till ett HTML-
-// dokumentet istället för till konsol. För att denna fil ska kunna
-// köras måste den dels anropas i HTML-filen (ändra rad 21 i där till
-// denna fils namn) och i filen style.css måste rad 55 kommenteras
-// eller raderas.
+// dokumentet istället för till konsol.
 
 // Taggarna output-text och output-container återfinns i HTML-filen
 let outputContainer = document.getElementById("text-output-container");
 let outputText = document.getElementById("output-text");
+let title = (document.title = "JavaScript FTW!");
 
 // Man kan t ex ställa färgen på ett område
 outputContainer.style.backgroundColor = "None";
