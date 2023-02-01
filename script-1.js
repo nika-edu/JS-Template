@@ -4,6 +4,7 @@ const carImages = {
   "img-2.png": "Tesla",
   "img-3.png": "Volkswagen",
 };
+let currentCar;
 
 // Taggarna output-text och output-container återfinns i HTML-filen
 let outputContainer = document.getElementById("text-output-container");
@@ -23,7 +24,7 @@ for (let i = 0; i < brandArray.length; i++) {
   infoText += `Bil #${i + 1}: ${brandArray[i]}` + "<br>";
 }
 
-infoText += "<br>Klicka i rutan för att dra en slumpad bil!";
+infoText += "<br>Klicka i denna ruta för att slumpa fram en bil!";
 
 // Här sker själva textutmatningen
 outputContainer.innerHTML = infoText;
@@ -38,6 +39,7 @@ function newCar() {
   // Skapar bildnamnet
   let currentImage = `img-${randomNumber + 1}.png`;
   console.log(currentImage);
+  currentCar = randomNumber;
 
   // Visar bild och text
   carImage.innerHTML = `<img src="./images/${currentImage}" />`;
